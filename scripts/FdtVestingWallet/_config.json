@@ -1,0 +1,10 @@
+{
+    "bsctest": {
+        "contractName": "FdtVestingWallet",
+        "deployedAddress": "0xE156f8cD38b0F4E46bd38E9b70Bf27Afe0E1F44D"
+    },
+    "bsc": {
+        "contractName": "FdtVestingWallet",
+        "deployedAddress": "0x0"
+    }
+}
