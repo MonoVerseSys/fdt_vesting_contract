@@ -1,0 +1,10 @@
+{
+    "bsctest": {
+        "contractName": "Presale1Wallet",
+        "deployedAddress": "0x9883C94b9F18FfB155b4468bE846F5833aD3A060"
+    },
+    "bsc": {
+        "contractName": "Presale1Wallet",
+        "deployedAddress": "0x0"
+    }
+}

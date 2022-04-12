@@ -1,17 +1,16 @@
 const moment = require('moment')
-const tokenAddress = '0x3a599e584075065eAAAc768D75EaEf85c2f2fF64'
+const tokenAddress = '0xFD52836a1e299BE4769FA7852Cd2FAE04E4618c3'
 
 
-const beneficiary = '0x36D02efda407e47B9FAa7747EA435c14BAe0a26e';
-const start = moment('2023-01-01T00:00:00+09:00');
-const end = moment('2023-11-01T00:00:00+09:00');
+// const beneficiary = '0xD3108FDD2417474892be85bae97603ee8EAB92c8';
+const start = moment('2022-04-12T11:10:00+09:00');
+const end = moment('2022-04-12T14:00:00+09:00');
 
 const vesting = moment.duration(end.diff(start))
 console.log(`vesting s: ${vesting.asSeconds()}, vesting d: ${vesting.asDays()}`)
 
 module.exports = [
     tokenAddress, 
-    beneficiary,
     start.unix(),
     vesting.asSeconds()
 ];

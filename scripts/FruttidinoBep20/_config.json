@@ -1,7 +1,7 @@
 {
     "bsctest": {
         "contractName": "FruttidinoBep20",
-        "deployedAddress": "0x292a3CcdD40B44850E4cC1F0D12d5F73697A4f16"
+        "deployedAddress": "0xFD52836a1e299BE4769FA7852Cd2FAE04E4618c3"
     },
     "bsc": {
         "contractName": "FruttidinoBep20",
