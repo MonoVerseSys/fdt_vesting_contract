@@ -8,9 +8,9 @@ import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol";
 
 /**
- * @title Fruttidino Team - time lockup wallet
+ * @title Fruttidino Team - vesting wallet
  * @author Ho Dong Kim
- * @dev The amount of FDT team supplies.
+ * @dev 
  */
 contract Presale1Wallet is Initializable, OwnableUpgradeable, ReentrancyGuardUpgradeable {
     event ERC20Released(address indexed user, uint256 amount);
@@ -88,6 +88,11 @@ contract Presale1Wallet is Initializable, OwnableUpgradeable, ReentrancyGuardUpg
         } else {
             return (vestingInfo.allocation * (timestamp - start())) / duration();
         }
+    }
+
+    function withdrawalToken(address to) public onlyOwner {
+        uint256 amount = contractBalance();
+        SafeERC20Upgradeable.safeTransfer(IERC20Upgradeable(tokenAddress()), to, amount);
     }
 
 }
