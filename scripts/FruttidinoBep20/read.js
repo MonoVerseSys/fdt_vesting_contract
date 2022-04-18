@@ -21,7 +21,10 @@ async function main() {
 
     // const rol2 =  await c.hasRole(minterRole, '0x677d8a47D009227368b96BeB98c7d7a9123E1FE0')
     // console.log(`rol2, ${rol2}`)
+    const allowance = await c.allowance(signers[0].address, '0x41246b887E25790748448c6458316ed2aA69b752')
 
+    
+    console.log(`allowance: `, ethers.utils.formatUnits(allowance, 'ether'))
 }
 
 main()

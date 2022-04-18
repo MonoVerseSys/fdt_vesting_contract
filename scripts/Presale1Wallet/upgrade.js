@@ -2,14 +2,15 @@ const utils = require("../utils");
 const { HARDHAT_NETWORK: net} = process.env
 const {
   contractName,
+  deployedAddress,
 } = require("./_config.json")[net];
 const params = require('./deployParams');
 
-// console.log(process.env)
-
 async function main() {
-    console.log(params)
-    await utils.deploy({ net, contractName, deployPrams: params });
+    const result = await utils.upgradeProxy({deployedAddress, contractName})
+//   const result = await utils.deployProxy({ net, contractName, deployPrams: params });
+
+  console.log(result);
 }
 
 main()

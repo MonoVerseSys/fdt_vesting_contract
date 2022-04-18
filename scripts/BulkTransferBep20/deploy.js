@@ -3,13 +3,10 @@ const { HARDHAT_NETWORK: net} = process.env
 const {
   contractName,
 } = require("./_config.json")[net];
-const params = require('./deployParams');
 
-// console.log(process.env)
 
 async function main() {
-    console.log(params)
-    await utils.deploy({ net, contractName, deployPrams: params });
+    await utils.deploy({ net, contractName });
 }
 
 main()

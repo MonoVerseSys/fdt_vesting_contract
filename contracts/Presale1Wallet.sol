@@ -10,7 +10,7 @@ import "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.
 /**
  * @title Fruttidino Team - vesting wallet
  * @author Ho Dong Kim
- * @dev 
+ * @dev presale wallet
  */
 contract Presale1Wallet is Initializable, OwnableUpgradeable, ReentrancyGuardUpgradeable {
     event ERC20Released(address indexed user, uint256 amount);
@@ -34,6 +34,10 @@ contract Presale1Wallet is Initializable, OwnableUpgradeable, ReentrancyGuardUpg
 
     function tokenAddress() public view returns (address) {
         return _tokenAddress;
+    }
+
+    function setTokenAddress(address __tokenAddaress) public onlyOwner {
+        _tokenAddress = __tokenAddaress;
     }
 
     function start() public view returns (uint64) {

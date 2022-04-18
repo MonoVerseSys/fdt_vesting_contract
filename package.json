@@ -13,9 +13,13 @@
     "@openzeppelin/contracts": "^4.5.0",
     "@openzeppelin/contracts-upgradeable": "^4.5.2",
     "@openzeppelin/hardhat-upgrades": "^1.16.1",
+    "bignumber.js": "^9.0.2",
+    "delay": "^5.0.0",
     "dotenv": "^16.0.0",
     "hardhat-gas-reporter": "^1.0.8",
+    "log-to-file": "^3.0.0",
     "moment": "^2.29.1",
+    "shelljs": "^0.8.5",
     "solidity-coverage": "^0.7.20"
   }
 }

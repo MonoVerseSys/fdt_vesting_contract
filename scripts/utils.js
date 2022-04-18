@@ -21,7 +21,8 @@ const deploy = async ({net, contractName, deployPrams }) => {
   const c = await C.deploy.apply(C, deployPrams);
 
   const result = await c.deployed();
-  console.log(`deployed result ${contractName}:`, result, result.address);
+  // console.log(`deployed result ${contractName}:`, result);
+  console.log(result.address)
 
   writeConfig(net, contractName, result.address);
 };

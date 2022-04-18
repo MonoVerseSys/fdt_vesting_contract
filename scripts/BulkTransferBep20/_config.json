@@ -1,0 +1,10 @@
+{
+    "bsctest": {
+        "contractName": "BulkTransferBep20",
+        "deployedAddress": "0x41246b887E25790748448c6458316ed2aA69b752"
+    },
+    "bsc": {
+        "contractName": "BulkTransferBep20",
+        "deployedAddress": "0x0616FFa61b49F6563A26237359Fc3da4610c64B5"
+    }
+}

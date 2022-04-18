@@ -1,8 +1,8 @@
 const moment = require('moment')
-const tokenAddress = '0x3a599e584075065eAAAc768D75EaEf85c2f2fF64'
+const tokenAddress = '0x3a599e584075065eaaac768d75eaef85c2f2ff64'
 
 
-const beneficiary = '0x36D02efda407e47B9FAa7747EA435c14BAe0a26e';
+const beneficiary = process.env.Address || '0x84a839BC182154A8fCbaDC44D3b65ee94C9C312A';
 const start = moment('2023-01-01T00:00:00+09:00');
 const end = moment('2023-11-01T00:00:00+09:00');
 
